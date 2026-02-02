@@ -112,7 +112,8 @@
 
     <!-- Header Section -->
     <!-- Flex layout: Stacked on mobile (flex-col), Side-by-side on desktop (md:flex-row) -->
-    <header class="mb-12 animate-fade-in w-full max-w-5xl relative z-30 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10">
+    <!-- Increased gap for better visual separation -->
+    <header class="mb-12 animate-fade-in w-full max-w-5xl relative z-30 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
         
         <!-- Profile Image Section -->
         <div class="relative flex-shrink-0 group">
@@ -121,7 +122,7 @@
             
             <!-- Main Image container with Squircle shape -->
             <div class="relative w-48 h-48 sm:w-56 sm:h-56 rounded-[2rem] bg-white p-1.5 shadow-xl border border-white/50 backdrop-blur-sm">
-                <!-- Image Updated with HTTPS link -->
+                <!-- Image with HTTPS link -->
                 <img src="https://www.puffy.com.tw/images/alicecho001.png" alt="愛妮老師" 
                      class="w-full h-full object-cover rounded-[1.7rem] bg-rose-50"
                      onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex items-center justify-center bg-rose-50 rounded-[1.7rem] text-rose-300\'><i class=\'fa-solid fa-user text-6xl\'></i></div>'">
@@ -134,13 +135,18 @@
         </div>
 
         <!-- Title Section -->
-        <div class="text-center md:text-left flex flex-col items-center md:items-start">
+        <!-- Center aligned everything for better symmetry as requested -->
+        <div class="text-center flex flex-col items-center">
             <h1 class="text-3xl md:text-5xl font-bold text-rose-800 tracking-wide mb-3 drop-shadow-sm text-shadow-white mt-2">
                 認知強化不失憶
             </h1>
-            <h2 class="text-xl md:text-2xl font-medium text-rose-600 bg-white/40 inline-block px-6 py-1.5 rounded-full backdrop-blur-md shadow-sm">
+            <h2 class="text-xl md:text-2xl font-medium text-rose-600 bg-white/40 inline-block px-6 py-1.5 rounded-full backdrop-blur-md shadow-sm mb-4">
                 愛妮老師的教學資源網
             </h2>
+            <!-- Font color set to dark gray/black -->
+            <h3 class="text-lg md:text-xl text-gray-900 font-bold tracking-widest mt-1">
+                智慧樂齡身心腦整合引導者
+            </h3>
         </div>
 
     </header>
@@ -226,7 +232,7 @@
         </a>
 
         <!-- Link 5: Activities Group -->
-        <a href="https://alice220468845.github.io/activitiesgroup/" target="_blank" class="preview-card rounded-2xl h-80 group cursor-pointer animate-fade-in delay-500 md:col-span-2 lg:col-span-1">
+        <a href="https://alice220468845.github.io/activitiesgroup/" target="_blank" class="preview-card rounded-2xl h-80 group cursor-pointer animate-fade-in delay-500">
             <iframe src="https://alice220468845.github.io/activitiesgroup/" class="iframe-background" scrolling="no" title="Group Activities Preview"></iframe>
             <div class="content-overlay"></div>
             <div class="card-content px-6 text-center">
@@ -236,6 +242,24 @@
                 <div class="mt-auto transform transition-transform duration-300 group-hover:-translate-y-1">
                     <h3 class="text-2xl font-bold text-rose-800 mb-1 group-hover:text-rose-600 transition-colors">團體活動</h3>
                     <p class="text-sm text-gray-500 font-medium mb-3">Group Activities</p>
+                    <span class="inline-block text-xs font-bold text-white bg-rose-400 px-5 py-2 rounded-full shadow-md group-hover:bg-rose-500 transition-all hover:shadow-lg">
+                        進入網站 <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <!-- Link 6: Nutrition (New Item) -->
+        <a href="https://alice220468845.github.io/nutrition1/" target="_blank" class="preview-card rounded-2xl h-80 group cursor-pointer animate-fade-in delay-500">
+            <iframe src="https://alice220468845.github.io/nutrition1/" class="iframe-background" scrolling="no" title="Nutrition Preview"></iframe>
+            <div class="content-overlay"></div>
+            <div class="card-content px-6 text-center">
+                <div class="absolute top-4 right-4 icon-container w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                    <i class="fa-solid fa-carrot text-rose-500 text-lg"></i>
+                </div>
+                <div class="mt-auto transform transition-transform duration-300 group-hover:-translate-y-1">
+                    <h3 class="text-2xl font-bold text-rose-800 mb-1 group-hover:text-rose-600 transition-colors">健康飲食</h3>
+                    <p class="text-sm text-gray-500 font-medium mb-3">Healthy Diet</p>
                     <span class="inline-block text-xs font-bold text-white bg-rose-400 px-5 py-2 rounded-full shadow-md group-hover:bg-rose-500 transition-all hover:shadow-lg">
                         進入網站 <i class="fa-solid fa-arrow-right ml-1"></i>
                     </span>
